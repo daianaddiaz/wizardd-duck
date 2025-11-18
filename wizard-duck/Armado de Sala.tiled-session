@@ -1,0 +1,112 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "juego pato.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "Idle (64x64)-sheet.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Moving Spikes 32x32 scaled 64x64.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "castle-tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "dios soy yo.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "dios.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "huevo.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "juego pato.tmx": {
+            "expandedGroupLayers": [
+                10
+            ],
+            "scale": 0.5,
+            "selectedLayer": 7,
+            "viewCenter": {
+                "x": 334,
+                "y": 114
+            }
+        },
+        "objetos huevo.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "puerta.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "puerta3.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "puertas 32.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "spikes.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "frame.defaultDuration": 50,
+    "last.exportedFilePath": "D:/Motores de VJ/wizard-duck/.godot/imported",
+    "last.imagePath": "D:/Motores de VJ",
+    "map.fixedSize": false,
+    "map.lastUsedExportFilter": "Godot 4 Scene files (*.tscn)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "openFiles": [
+        "juego pato.tmx",
+        "castle-tileset.tsx",
+        "objetos huevo.tsx",
+        "huevo.tsx",
+        "Idle (64x64)-sheet.tsx",
+        "puerta.tsx",
+        "puertas 32.tsx",
+        "puerta3.tsx",
+        "dios.tsx",
+        "dios soy yo.tsx",
+        "spikes.tsx",
+        "Moving Spikes 32x32 scaled 64x64.tsx"
+    ],
+    "project": "Armado de Sala.tiled-project",
+    "recentFiles": [
+        "dios.tsx",
+        "Moving Spikes 32x32 scaled 64x64.tsx",
+        "spikes.tsx",
+        "dios soy yo.tsx",
+        "puerta3.tsx",
+        "puertas 32.tsx",
+        "puerta.tsx",
+        "Idle (64x64)-sheet.tsx",
+        "huevo.tsx",
+        "objetos huevo.tsx",
+        "castle-tileset.tsx",
+        "juego pato.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 1,
+    "tileset.spacing": 1,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
