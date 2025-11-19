@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qnvotsfq110j"
-path="res://.godot/imported/Moving Spikes 32x32 scaled 64x64.png-e7a399e8ff660f295d0f25fd8980b277.ctex"
+uid="uid://b76wg072s6d5o"
+path="res://.godot/imported/EggBomb (32x32).png-8806ac1f989212c671cd50023c0c2d1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moving Spikes 32x32 scaled 64x64.png"
-dest_files=["res://.godot/imported/Moving Spikes 32x32 scaled 64x64.png-e7a399e8ff660f295d0f25fd8980b277.ctex"]
+source_file="res://Assets/EggBomb (32x32).png"
+dest_files=["res://.godot/imported/EggBomb (32x32).png-8806ac1f989212c671cd50023c0c2d1f.ctex"]
 
 [params]
 

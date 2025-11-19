@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqs04davaupuc"
-path="res://.godot/imported/New Piskel.png-4b57200a9b5d4d6f89cce1bdbbdb2eec.ctex"
+uid="uid://brjkbfrqrvyip"
+path="res://.godot/imported/castle-tileset.png-c1096b2f1d1a198e7bcebc153a2a22b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://New Piskel.png"
-dest_files=["res://.godot/imported/New Piskel.png-4b57200a9b5d4d6f89cce1bdbbdb2eec.ctex"]
+source_file="res://Assets/castle-tileset.png"
+dest_files=["res://.godot/imported/castle-tileset.png-c1096b2f1d1a198e7bcebc153a2a22b4.ctex"]
 
 [params]
 

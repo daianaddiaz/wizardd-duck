@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://dj40kxdwh5mxn"]
+
+[ext_resource type="Script" uid="uid://uqrtgroutrph" path="res://Scripts/bomb.gd" id="1_1trkl"]
+[ext_resource type="Texture2D" uid="uid://h1aa603mkps7" path="res://Assets/tileset.png" id="2_8oq1t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mlebc"]
+atlas = ExtResource("2_8oq1t")
+region = Rect2(31.9282, 144, 15.7722, 16.1975)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tfnik"]
+size = Vector2(6, 16)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7bhcp"]
+radius = 27.0
+
+[node name="Bomb" type="Area2D" node_paths=PackedStringArray("bomb")]
+collision_layer = 16
+collision_mask = 32
+script = ExtResource("1_1trkl")
+bomb = NodePath(".")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_mlebc")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_tfnik")
+
+[node name="explosion_area" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 34
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="explosion_area"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_7bhcp")

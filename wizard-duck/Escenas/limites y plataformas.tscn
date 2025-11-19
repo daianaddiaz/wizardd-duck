@@ -1,11 +1,11 @@
 [gd_scene load_steps=8 format=4 uid="uid://dseulacjojns5"]
 
-[ext_resource type="Texture2D" uid="uid://brjkbfrqrvyip" path="res://castle-tileset.png" id="castle-tileset"]
-[ext_resource type="Texture2D" uid="uid://qnvotsfq110j" path="res://Moving Spikes 32x32 scaled 64x64.png" id="Moving Spikes 32x32 scaled 64x64"]
-[ext_resource type="Texture2D" uid="uid://b76wg072s6d5o" path="res://EggBomb (32x32).png" id="objetos"]
+[ext_resource type="Texture2D" uid="uid://b76wg072s6d5o" path="res://Assets/EggBomb (32x32).png" id="1_fwaft"]
+[ext_resource type="Texture2D" uid="uid://qnvotsfq110j" path="res://Assets/Moving Spikes 32x32 scaled 64x64.png" id="2_d2deh"]
+[ext_resource type="Texture2D" uid="uid://brjkbfrqrvyip" path="res://Assets/castle-tileset.png" id="3_kivke"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0"]
-texture = ExtResource("objetos")
+texture = ExtResource("1_fwaft")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -18,7 +18,7 @@ texture_region_size = Vector2i(32, 32)
 8:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1"]
-texture = ExtResource("Moving Spikes 32x32 scaled 64x64")
+texture = ExtResource("2_d2deh")
 margins = Vector2i(1, 1)
 separation = Vector2i(1, 1)
 11:0/0 = 0
@@ -109,7 +109,7 @@ separation = Vector2i(1, 1)
 14:7/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2"]
-texture = ExtResource("castle-tileset")
+texture = ExtResource("3_kivke")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0

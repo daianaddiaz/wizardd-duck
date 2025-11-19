@@ -1,8 +1,9 @@
 [gd_scene load_steps=7 format=4 uid="uid://cu8i2y50m2sko"]
 
-[ext_resource type="PackedScene" uid="uid://dseulacjojns5" path="res://limites y plataformas.tscn" id="1_epypp"]
-[ext_resource type="Texture2D" uid="uid://brjkbfrqrvyip" path="res://castle-tileset.png" id="2_0hol4"]
+[ext_resource type="PackedScene" uid="uid://dseulacjojns5" path="res://Escenas/limites y plataformas.tscn" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://brjkbfrqrvyip" path="res://Assets/castle-tileset.png" id="2_0hol4"]
 [ext_resource type="Script" uid="uid://2qtcd85ej3ae" path="res://tile_map_layer.gd" id="2_epypp"]
+
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_q6r6c"]
 scenes/3/scene = ExtResource("1_epypp")

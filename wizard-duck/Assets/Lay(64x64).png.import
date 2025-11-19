@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b76wg072s6d5o"
-path="res://.godot/imported/EggBomb (32x32).png-5819ed75322c44f109171469c7aeeb0e.ctex"
+uid="uid://00ujj5ruww44"
+path="res://.godot/imported/Lay(64x64).png-032d8f1810bb073daae4728fc4ad3989.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://EggBomb (32x32).png"
-dest_files=["res://.godot/imported/EggBomb (32x32).png-5819ed75322c44f109171469c7aeeb0e.ctex"]
+source_file="res://Assets/Lay(64x64).png"
+dest_files=["res://.godot/imported/Lay(64x64).png-032d8f1810bb073daae4728fc4ad3989.ctex"]
 
 [params]
 
