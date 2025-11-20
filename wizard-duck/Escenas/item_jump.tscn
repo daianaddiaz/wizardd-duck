@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://biu6m76p0hty8"]
+
+[ext_resource type="Script" uid="uid://d0vah2jialxo7" path="res://Scripts/item_jump.gd" id="1_04qhu"]
+[ext_resource type="Texture2D" uid="uid://brjkbfrqrvyip" path="res://Assets/castle-tileset.png" id="2_sroai"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s8wci"]
+atlas = ExtResource("2_sroai")
+region = Rect2(32, 176, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbgn8"]
+size = Vector2(15, 10.5)
+
+[node name="Item_jump" type="Node2D" node_paths=PackedStringArray("Item_area")]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_04qhu")
+Item_area = NodePath("Sprite2D/Area2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = SubResource("AtlasTexture_s8wci")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(0, -0.25)
+shape = SubResource("RectangleShape2D_rbgn8")

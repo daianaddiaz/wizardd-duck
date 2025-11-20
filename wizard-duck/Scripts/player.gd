@@ -2,10 +2,10 @@ extends CharacterBody2D
 @export var anim: AnimatedSprite2D
 @export var area_2D: Area2D
 @export var item: Node2D
-@export var item2: Node2D
+@export var item_jump: Node2D
 @export var bomb_scene: PackedScene
 
-var speed = 300.0
+var speed = 250.0
 var speed_jump  = -400.0
 var gravity = 980.0
 
@@ -30,9 +30,9 @@ var current_health
 func _ready():
 	current_health = max_health
 	setup_dash_timer()
-	#area_2D.body_entered.connect(_on_area_2d_body_entered)
-	##item.connect("collect_item", collect_item)
-	##item2.connect("collect_item2", collect_item2)
+	area_2D.body_entered.connect(_on_area_2d_body_entered)
+	item.connect("collect_item", collect_item)
+	item_jump.connect("collect_item_jump", collect_item_jump)
 	
 
 func _physics_process(delta):
@@ -177,16 +177,16 @@ func _on_area_2d_body_entered(_body):
 	take_damage(1)
 	
  #actiación del dash
-#func collect_item():
-	#active_dash = true
-	#print("PLAYER: activar el dash")
-	#
-#func collect_item2():
-	#active_double_jump = true
-	#print("PLAYER: activar doble salto")
-	#
-#func explosion():
-	#take_damage(1)
+func collect_item():
+	active_dash = true
+	print("PLAYER: activar el dash")
+	
+func collect_item_jump():
+	active_double_jump = true
+	print("PLAYER: activar doble salto")
+	
+func explosion():
+	take_damage(1)
 	
 	
 	

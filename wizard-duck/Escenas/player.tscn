@@ -322,12 +322,11 @@ size = Vector2(31.5, 33.5)
 size = Vector2(31.5, 33.5)
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("anim", "area_2D")]
-scale = Vector2(2, 2)
 collision_layer = 2
-collision_mask = 25
+collision_mask = 5
 script = ExtResource("1_i8vih")
 anim = NodePath("AnimatedSprite2D")
-area_2D = NodePath("explosion_area")
+area_2D = NodePath("area_player")
 bomb_scene = ExtResource("2_qgqwx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -341,10 +340,10 @@ texture_filter = 1
 position = Vector2(-0.25, 0.25)
 shape = SubResource("RectangleShape2D_i8vih")
 
-[node name="explosion_area" type="Area2D" parent="."]
+[node name="area_player" type="Area2D" parent="."]
 collision_layer = 0
-collision_mask = 12
+collision_mask = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="explosion_area"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area_player"]
 position = Vector2(-0.25, 0.25)
 shape = SubResource("RectangleShape2D_qgqwx")

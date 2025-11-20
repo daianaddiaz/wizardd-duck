@@ -1,17 +1,18 @@
 [gd_scene load_steps=5 format=3 uid="uid://c2mtmhyslxs15"]
 
 [ext_resource type="Script" uid="uid://bha73cofdtuvx" path="res://Scripts/item_dash.gd" id="1_e2spd"]
-[ext_resource type="Texture2D" uid="uid://h1aa603mkps7" path="res://Assets/tileset.png" id="2_e2spd"]
+[ext_resource type="Texture2D" uid="uid://brjkbfrqrvyip" path="res://Assets/castle-tileset.png" id="2_e2spd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ncctr"]
 atlas = ExtResource("2_e2spd")
-region = Rect2(48, 32, 16, 16)
+region = Rect2(16, 128, 16, 16)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pymcb"]
-radius = 7.07107
+radius = 8.0
 
 [node name="Item" type="Node2D" node_paths=PackedStringArray("Item_area")]
-scale = Vector2(2, 2)
+texture_filter = 1
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_e2spd")
 Item_area = NodePath("Sprite2D/Area2D")
 
@@ -23,4 +24,5 @@ collision_layer = 8
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+position = Vector2(0.5, -0.5)
 shape = SubResource("CircleShape2D_pymcb")
