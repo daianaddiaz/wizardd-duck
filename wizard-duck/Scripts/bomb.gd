@@ -29,7 +29,7 @@ func explode():
 			print(body.name, " está demasiado lejos (", distance, " px)")
 		
 #func tile_destroy(tilemap, pos):
-	## Verificar todas las layers
+	# Verificar todas las layers
 	#for layer in tilemap.get_layers_count():
 		#var data = tilemap.get_cell_tile_data(layer, pos)
 		#if data and data.get_custom_data("destructible"):

@@ -168,7 +168,7 @@ region = Rect2(704, 0, 64, 64)
 [sub_resource type="SpriteFrames" id="SpriteFrames_e3htq"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_b21vg")
 }, {
 "duration": 1.0,
@@ -186,7 +186,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2eo5y")
 }],
-"loop": true,
+"loop": false,
 "name": &"dash",
 "speed": 5.0
 }, {
@@ -323,7 +323,6 @@ size = Vector2(31.5, 33.5)
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("anim", "area_2D")]
 collision_layer = 2
-collision_mask = 5
 script = ExtResource("1_i8vih")
 anim = NodePath("AnimatedSprite2D")
 area_2D = NodePath("area_player")
@@ -331,8 +330,8 @@ bomb_scene = ExtResource("2_qgqwx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e3htq")
-animation = &"idle"
-frame = 7
+animation = &"dash"
+frame = 5
 frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -5,8 +5,8 @@ extends CharacterBody2D
 @export var item_jump: Node2D
 @export var bomb_scene: PackedScene
 
-var speed = 250.0
-var speed_jump  = -400.0
+var speed = 220.0
+var speed_jump  = -350.0
 var gravity = 980.0
 
 #variables del dash
@@ -23,7 +23,7 @@ var jump_counter = 0
 var active_double_jump= false
 
 #variables de estado de salud
-var max_health = 3
+var max_health = 10
 var current_health
 
 
@@ -63,6 +63,7 @@ func update_sprite_direction(direction):
 	if direction != 0:
 		anim.flip_h = direction < 0
 		
+#manejo de animaciones
 func handle_animation():
 	if is_on_floor():
 		if abs(velocity.x) > 0:
@@ -176,11 +177,12 @@ func blink():
 func _on_area_2d_body_entered(_body):
 	take_damage(1)
 	
- #actiación del dash
+ #activación del dash
 func collect_item():
 	active_dash = true
 	print("PLAYER: activar el dash")
 	
+#activación del doble salto
 func collect_item_jump():
 	active_double_jump = true
 	print("PLAYER: activar doble salto")
